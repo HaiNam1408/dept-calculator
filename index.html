@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Dept Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <table border="0" cellspacing="0" class="table-input">
+            <tr>
+                <td>Số tiền vay</td>
+                <td>
+                    <input type="number" name="origin">
+                </td>
+                <td>VNĐ</td>
+            </tr>
+            <tr>
+                <td>Thời gian vay</td>
+                <td>
+                    <input type="number" name="time">
+                </td>
+                <td>tháng</td>
+            </tr>
+            <tr>
+                <td>Lãi suất</td>
+                <td>
+                    <input type="number" name="rate">
+                </td>
+                <td>%/năm</td>
+            </tr>
+            <tr>
+                <td>Ngày giải ngân</td>
+                <td>
+                    <input type="date" name="date">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="app()" class="btn-calculor">Tính toán</button>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="table-output">
+        </table>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

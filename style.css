@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-input {
+    width: 100%;
+    max-width: 1024px;
+    margin: 32px auto;
+}
+
+.table-input tr:nth-child(odd) {
+    background: #ccc;
+}
+
+.table-input tr td:first-child {
+    font-weight: 600;
+    width: 30%;
+    padding-left: 10%;
+}
+
+.table-input tr td:last-child {
+    padding-left: 8px;
+}
+
+.table-input input {
+    width: 100%;
+    height: 32px;
+    padding-left: 8px;
+}
+
+.table-input tr {
+    height: 46px;
+}
+
+.btn-calculor {
+    height: 32px;
+    padding: 0 16px;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(174, 73, 73);
+    transition: all .2s ease;
+}
+
+.btn-calculor:hover {
+    background-color: rgb(234, 40, 40);
+}
+
+.table-output {
+    width: 98%;
+    margin: 0 auto 32px;
+}
+
+.table-output,
+.table-output th,
+.table-output td {
+    border: 2px solid #555;
+    border-collapse: collapse;
+}
+
+.table-output tr {
+    height: 36px;
+}
+
+.table-output tr td {
+    text-align: center;
+}
+
+.table-output tr:nth-child(odd) {
+    background: #ddd;
+}
