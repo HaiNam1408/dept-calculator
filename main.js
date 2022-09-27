@@ -61,9 +61,9 @@ function app() {
         <td><b>Tổng<b></td>
         <td></td>
         <td></td>
-        <td>${formatNumber(sumRest)}</td>
-        <td>${formatNumber(sumInterest)}</td>
-        <td>${formatNumber(sumRestInterest)}</td>
+        <td><b>${formatNumber(sumRest)}</b></td>
+        <td><b>${formatNumber(sumInterest)}</b></td>
+        <td><b>${formatNumber(sumRestInterest)}</b></td>
     </tr>`
 
     let tableOutput = document.querySelector('.table-output')
