@@ -2,12 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: cursive, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin: 32px;
 }
 
 .table-input {
     width: 100%;
     max-width: 1024px;
-    margin: 32px auto;
+    margin: auto;
 }
 
 .table-input tr:nth-child(odd) {
@@ -51,8 +57,8 @@
 }
 
 .table-output {
-    width: 98%;
-    margin: 0 auto 32px;
+    width: 96%;
+    margin: 32px auto;
 }
 
 .table-output,
