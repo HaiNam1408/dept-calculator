@@ -11,11 +11,16 @@ function app() {
     dept.origin = document.querySelector('input[name="origin"]').value
     dept.time = document.querySelector('input[name="time"]').value
     dept.rate = document.querySelector('input[name="rate"]').value
-    dept.date = new Date(document.querySelector('input[name="date"]').value)
+    dept.date = new Date(document.querySelector('input[id="date"]').value)
     dept.rest = dept.origin / dept.time
 
     if (checkData()) {
-        alert('Hãy nhập dữ liệu trước khi tính toán!!!')
+        swal({
+            title: "Thất bại",
+            text: "Hãy kiểm tra lại input và thử lại",
+            icon: "warning",
+            button: "Thử lại",
+          });
         return
     }
 
@@ -61,15 +66,9 @@ function app() {
         <td><b>Tổng<b></td>
         <td></td>
         <td></td>
-<<<<<<< HEAD
         <td><b>${formatNumber(sumRest)}<b></td>
         <td><b>${formatNumber(sumInterest)}<b></td>
         <td><b>${formatNumber(sumRestInterest)}<b></td>
-=======
-        <td><b>${formatNumber(sumRest)}</b></td>
-        <td><b>${formatNumber(sumInterest)}</b></td>
-        <td><b>${formatNumber(sumRestInterest)}</b></td>
->>>>>>> cc73cdc677ba15bfdf337246efe283312c9cfd0f
     </tr>`
 
     let tableOutput = document.querySelector('.table-output')
@@ -77,7 +76,7 @@ function app() {
 }
 
 function checkData() {
-    if (dept.origin == 0 || dept.time == 0 || dept.rate == 0 || dept.date == '') return true
+    if (dept.origin == 0 || dept.time == 0 || dept.rate == 0 || dept.date == 'Invalid Date') return true
     return false
 }
 
